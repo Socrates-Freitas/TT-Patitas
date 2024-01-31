@@ -1,0 +1,3 @@
+const BACKGROUND_COLOR = "#E6E8E9"
+
+export default BACKGROUND_COLOR
