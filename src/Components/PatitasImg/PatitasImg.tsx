@@ -1,11 +1,11 @@
 import styled from "styled-components";
 
-type ImgSpecs = {
+type ImgProps = {
     widthPercent:number;
     
 }
 
-const PatitasImg = styled.img<ImgSpecs>`
+const PatitasImg = styled.img<ImgProps>`
     width: ${props=> props.widthPercent}%;
     height: auto;
 

@@ -14,7 +14,7 @@ type ConfirmarScreenTemplateProps = {
 const ConfirmarScreenTemplate = (props: ConfirmarScreenTemplateProps) => {
   return (
     <LoginECadastroPageContainer>
-      <FormImageContainer>
+      <FormImageContainer marginBottomInVh={0}>
         <PatitasLogoConfirmar />
       </FormImageContainer>
 

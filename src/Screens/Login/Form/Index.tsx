@@ -22,7 +22,7 @@ const LoginFormsPage = () => {
 
   return (
     <LoginECadastroPageContainer>
-      <FormImageContainer>
+      <FormImageContainer marginBottomInVh={0}>
         <PatitasFormsLogo />
 
         <PatitasImg widthPercent={15} src={dogPaw} />

@@ -15,7 +15,7 @@ function App() {
     // <LoginFormsPage />
     // <CadastroPage/>
     //<ConfirmarEmailScreen />
-    //  <EmailConfirmadoScreen />
+     // <EmailConfirmadoScreen />
     <PesquisaScreen />
   );
 }

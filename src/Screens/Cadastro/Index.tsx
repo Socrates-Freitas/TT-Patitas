@@ -19,7 +19,7 @@ import Checkbox from "../../Components/Input/Checkbox/Checkbox";
 const CadastroPage = () => {
   return (
     <LoginECadastroPageContainer>
-      <FormImageContainer>
+      <FormImageContainer marginBottomInVh={0}>
         <PatitasFormsLogo />
       </FormImageContainer>
 

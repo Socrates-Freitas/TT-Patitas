@@ -11,20 +11,18 @@ import img from "../../Imgs/outras/Dog-paw-cuate-1.svg";
 
 const EmailConfirmadoScreen = () => {
   return (
-
     <LoginECadastroPageContainer>
-      <FormImageContainer>
+      <FormImageContainer marginBottomInVh={0}>
         <PatitasLogoConfirmar />
       </FormImageContainer>
 
       <EmailConfirmadoImg
         imgUrl={img}
-        topMarginInVh={3}
+        topMarginInVh={5}
         bottomMarginInVh={-7.1}
       />
 
       <ConfirmarPagesButton text={"E-mail confirmado"} />
-
     </LoginECadastroPageContainer>
   );
 };
