@@ -1,35 +1,33 @@
-import styled from "styled-components"
+import styled from "styled-components";
 
 type ButtonProps = {
-    bgColor:string,
-    textColor:string,
-    marginBottomInVh:number
-} 
+  bgColor: string;
+  fontSizeInEm: number;
+  marginBottomInVh: number;
+  isBold: boolean;
+};
 
+const StandardButton = styled.input.attrs({ type: "submit" })<ButtonProps>`
+  border: none;
+  background-color: ${(props) => props.bgColor};
+  border-radius: 18px;
+  color: #e6e8e9;
+  width: 30%;
+  height: 7vh;
+  font-size: ${(props) => props.fontSizeInEm}em;
+  font-weight: ${(props) => (props.isBold ? "bold" : "normal")};
+  margin-bottom: ${(props) => props.marginBottomInVh}vh;
 
-const StandardButton = styled.input<ButtonProps>`
-    border:none;
-    background-color: ${props=> props.bgColor};
-    border-radius: 18px;
-    color:${props=> props.textColor};
-    width:30%;
-    height: 7vh;
-    font-size: 1.4em;
-    font-weight: bold;
-    margin-bottom: ${props=> props.marginBottomInVh}vh;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 
+  @media screen and (max-width: 800px) {
+    width: 85%;
+    height: 5vh;
 
-    filter: drop-shadow(0px 4px 4px rgba(0,0,0,0,0.25));
-    
-    @media screen and (max-width: 800px) {
-        width:85%;
-        height: 5vh;
+    align-self: center;
+  }
+`;
 
-        align-self: center;
-
-    }
-`
-
-
-
-export default StandardButton
+export default StandardButton;

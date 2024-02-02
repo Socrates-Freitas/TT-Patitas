@@ -8,7 +8,7 @@ const LoginECadastroPageContainer = styled.main`
     background-color: ${BACKGROUND_COLOR};
     display: flex;
     flex-direction: column;
-    
+    font-family: Verdana;
     padding-top:50px;
     color:#154962;
 

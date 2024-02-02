@@ -3,7 +3,6 @@ import styled from "styled-components";
 type ImgSpecs = {
     widthPercent:number;
     
-    
 }
 
 const PatitasImg = styled.img<ImgSpecs>`
