@@ -27,12 +27,16 @@ const PesquisaScreen = () => {
       </FormImageContainer>
 
       <form>
+
         <FormInputContainer>
+
           <StyledTextInput
             iconUrl={icon}
             placeholder="Procure aqui seu produto..."
           />
+          
         </FormInputContainer>
+
       </form>
 
       <CategoriaGrid categorias={categorias} />
